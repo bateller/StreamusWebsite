@@ -180,13 +180,18 @@ img[data-src="img/streamusIntro5.png"] {
 }
 
 #donateContent iframe {
-    width: 193px !important;
+    height: 51px !important;
 }
 
 #currencySelect,
 #donationAmount {
     width: 200px;
     display: inline-block;
+}
+
+#donationAmount {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 @media (max-width: 1220px) {
@@ -233,9 +238,4 @@ img[data-src="img/streamusIntro5.png"] {
     #donateContent button[form="payPalDonateForm"] {
         margin-top: 15px;
     }
-}
-
-.doge-widget {
-    display: inline-block;
-    margin-top: 5px;
 }

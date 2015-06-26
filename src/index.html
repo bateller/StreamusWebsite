@@ -1,4 +1,6 @@
-﻿<html>
+﻿<!DOCTYPE html>
+
+<html>
     
     <head>
         <title>Streaming YouTube music made simple by Google Chrome - Streamus</title>
@@ -8,6 +10,7 @@
         <meta property="og:url" content="http://streamus.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Streamus" />
+        <meta name="google-site-verification" content="0qOQI4-AfjZP44e0AffoNG76uvOkSVt0SW3Ftd6vVNg" />
 
         <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jbnkffmindojffecdhbbmekbmkkfpmjd" />
         <link rel="shortcut icon" href="favicon.ico" />
@@ -19,7 +22,6 @@
         <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
         <link href="css/bootstrap-modal.css" rel="stylesheet" />
         <!-- endbuild -->
-
     </head>
     
     <body class="loading">
@@ -28,7 +30,7 @@
             <div class="container-narrow">
                 <div class="header row">
                     <div class="col-md-6 logoWrapper">
-                        <img width="250" height="54" src="img/logo.png" class="clickable" title="Streaming YouTube music made simple by Google Chrome - Streamus" alt="Streaming YouTube music made simple by Google Chrome - Streamus" class="img-responsive" />
+                        <img id="logo" width="250" height="54" src="img/logo.png" class="clickable" title="Streaming YouTube music made simple by Google Chrome - Streamus" alt="Streaming YouTube music made simple by Google Chrome - Streamus" class="img-responsive" />
                     </div>
                     <div class="col-md-6 text-right navigationWrapper">
                         
@@ -119,7 +121,7 @@
                         
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-right img-thumbnail img-responsive" src="img/iconLocation.png" alt="Streamus Icon Location" />
+                            <img width="652" height="498" class="featurette-image pull-right img-thumbnail img-responsive" src="img/iconLocation.png" alt="Streamus Icon Location" />
                             <h2 class="featurette-heading">
                                 <span class="muted">
                                     The Streamus icon is in the upper right.
@@ -132,20 +134,20 @@
                         </div>
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-left img-thumbnail img-responsive" src="img/emptyPlaylist.png" alt="Streamus Intro - Welcome" />
+                            <img width="652" height="498" class="featurette-image pull-left img-thumbnail img-responsive" src="img/emptyPlaylist.png" alt="Streamus Intro - Welcome" />
                             <h2 class="featurette-heading">
                                 <span class="muted">
                                     Welcome to your new content library.
                                 </span>
                             </h2>
                             <p class="lead">
-                                Streamus starts pretty much empty. You've gotta add some videos to your
-                                playlist! Click the search icon to begin adding to your colleciton.
+                                Streamus starts pretty much empty. You've gotta add some songs to your
+                                playlist! Click the search icon to begin adding to your collection.
                             </p>
                         </div>
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-right img-thumbnail img-responsive" data-src="img/selectingItems.png" alt="Streamus Intro - Searching"/>
+                            <img width="652" height="498" class="featurette-image pull-right img-thumbnail img-responsive" data-src="img/selectingItems.png" alt="Streamus Intro - Searching"/>
                             <h2 class="featurette-heading">Searching for videos</h2>
                             <p class="lead">
                                 Try typing in an artist or song name. You should see search results appear.
@@ -155,7 +157,7 @@
                         </div>
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-left img-thumbnail img-responsive" data-src="img/draggingItems.png" alt="Streamus Intro - Adding Videos"/>
+                            <img width="652" height="498" class="featurette-image pull-left img-thumbnail img-responsive" data-src="img/draggingItems.png" alt="Streamus Intro - Adding Videos"/>
                             <h2 class="featurette-heading">Adding videos</h2>
                             <p class="lead">
                                 Click-and-drag search results to your stream. Drop search results to add.
@@ -164,7 +166,7 @@
                         </div>
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-right img-thumbnail img-responsive" data-src="img/playing.png" alt="Streamus Intro - Playing"/>
+                            <img width="652" height="498" class="featurette-image pull-right img-thumbnail img-responsive" data-src="img/playing.png" alt="Streamus Intro - Playing"/>
                             <h2 class="featurette-heading">Playing videos</h2>
                             <p class="lead">
                                 Click play to begin playing the first video in your stream. The videos will play in order, but feel free to re-arrange them.
@@ -174,7 +176,7 @@
                         </div>
                         <hr class="featurette-divider" />
                         <div class="featurette">
-                            <img width="652" height="428" class="featurette-image pull-left img-thumbnail img-responsive" data-src="img/createPlaylist.png" alt="Streamus Intro - Adding Playlists"/>
+                            <img width="652" height="498" class="featurette-image pull-left img-thumbnail img-responsive" data-src="img/createPlaylist.png" alt="Streamus Intro - Adding Playlists"/>
                             <h2 class="featurette-heading">Adding playlists</h2>
                             <p class="lead">
                                 The playlist management pane can be expanded by clicking the button located in the upper-left corner. You can add, delete
@@ -242,7 +244,7 @@
                                 in your ideas. How do you use YouTube?
                             </p>
                             <p id="aboutConclusion">
-                                I'll make Streamus. You buy me a beer at <a href="http://electricdaisycarnival.com/">Electric Daisy Carnival 2014</a>. Deal? ;)
+                                I'll make Streamus. You buy me a beer at <a href="http://electricdaisycarnival.com/">Electric Daisy Carnival 2015</a>. Deal? ;)
                             </p>
                         </div>
                         <div class="col-md-4">
@@ -318,16 +320,6 @@
                         <a class="coinbase-button" data-code="4fe7c0aa7fbe7bab258cfc07b50446df" data-button-style="custom_large" href="https://coinbase.com/checkouts/4fe7c0aa7fbe7bab258cxfc07b50446df">
                             Donate Bitcoins
                         </a>
-                        
-                        <div class='doge-widget-wrapper'>
-                            <form method='get' action='https://www.dogeapi.com/checkout'>
-                                <input type='hidden' name='widget_type' value='donate'>
-                                <input type='hidden' name='widget_key' value='1s07rksokwjss1dzufi2ncirg'>
-                                <input type='hidden' name='payment_address' value='DChmgf8WaMqat2GmwWUY7myn6zHY3ciaSw'>
-                                <input type='hidden' name='show_received' value='1'>
-                                <div class='doge-widget' style='display:none;'></div>
-                            </form>
-                        </div>
                     </div>
 
                 </div>
@@ -338,7 +330,7 @@
                     
                     <div class="col-md-6 legalWrapper">
                         <p>
-                            © 2014 Streamus™
+                            © 2015 Streamus™
                             <a id="touButton" class="clickable" title="Terms of Use">
                                 Terms of Use
                             </a>
